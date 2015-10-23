@@ -9,4 +9,19 @@
 
 #icons {
 	float: right;
+	border: 2px solid black;
 }
+
+#bio{
+	border: 2px solid black;
+}
+
+#footer{
+	border: 2px solid black;
+}
+
+#name{
+	border: 2px solid black;
+}
+
+
