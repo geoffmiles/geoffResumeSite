@@ -1,0 +1,40 @@
+#picture{
+	border: 2px solid black;
+}
+
+#name{
+	border: 2px solid black;
+}
+
+#icons{
+	border: 2px solid black;
+	float: right;
+	fill: #C3C3C3;
+}
+
+#bio{
+	border: 2px solid black;
+}
+
+#menu{
+	border: 2px solid black;
+	text-decoration: none;
+}
+
+div div ul a:hover{
+	text-decoration: none;
+	color: red;
+}
+
+#footer{
+	border: 2px solid black;
+}
+
+ul {
+	list-style-type: none; 
+}
+
+a {
+  color: #b63b4d;
+  text-decoration: none;
+}

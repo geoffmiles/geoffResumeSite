@@ -1,0 +1,12 @@
+#main.container{
+	background: url('http://davidseaver.com/wp-vermont-photographer/wp-content/uploads/DSG_8200_p.jpg') no-repeat center center fixed;
+	-webkit-background-size: cover;
+    -moz-background-size: cover;
+    background-size: cover;
+    -o-background-size: cover;
+}
+
+
+#icons {
+	float: right;
+}
