@@ -1,11 +1,37 @@
+html{
+	height: 100vh;
+}
+
 body{
 	height: 100%;
 	background: url(../images/background.jpg) no-repeat center center fixed;
 	background-size: cover;
 }
 
+hr {
+	border-color: rgb(34,34,34);
+	margin: 0px;
+}
+
+.header {
+	height: 250px;
+}
+
+.fixed {
+    position: fixed;
+    top: 0;
+    width: 100%;
+}
+
 .trans {
 	background-color: rgba(137, 137, 137, 0.7);
+	height: 100%;
+	width: 100%;
+}
+
+.top-right {
+	height: 100%;
+	padding: 0px 15px 0px 15px;
 }
 
 .picture {
@@ -15,24 +41,100 @@ body{
 }
 
 .name {
+	margin: 0px;
+	white-space: nowrap;
+	height: 70%;
+	width: 100%;
+	padding: 0px 15px 0px 15px;
+}
+
+.large-screen-name {
 	font-family: "Nothing You Could Do";
 	font-size: 105px;
+	color: black;
 	float: left;
 }
 
-.icons a {
-	float: right;
-	color: rgba(10,10,9,.5);
+.small-screen-name {
+	font-family: "Nothing You Could Do";
+	font-size: 50px;
+	color: black;
+	float: left;
 }
 
-.icons a:hover {
-	color: rgba(10,10,9);
+.icons-large-screen {
+	height: 30%;
+	width: 100%;
+	padding-right: 15px;
+}
+
+.icons-large-screen a {
+	float: right;
+	color: rgba(10,10,9,.5);
+	padding-bottom: 10px;
+
+}
+
+.icons-large-screen a:hover {
+	color: #d10000;
+}
+
+#menu {
+	padding-right: 0px;
 }
 
 .bio {
-
+	padding-right: 15px;
+	margin-top: 10px;
+	color: black;
+	font-size: 17px;
 }
 
-.footer {
 
+/* Landscape phones and down */
+@media (max-width: 480px) {
+	.picture {
+        display: none !important;
+    }
+
+    .large-screen-name {
+        display: none !important;
+    }
+
+    .icons-large-screen {
+        display: none !important;
+    }
+
+    #cssmenu {
+        display: none !important;
+    }
+
+    .large-screen-name {
+        display: none !important;
+    }
+}
+
+/* Landscape phone to portrait tablet */
+@media (max-width: 767px) {
+	.large-screen-name {
+        display: none !important;
+    }
+
+}
+/* Portrait tablet to landscape and desktop */
+@media (min-width: 768px) and (max-width: 979px) {
+	.large-screen-name {
+        display: none !important;
+    }
+
+    .small-screen-name{
+    	clear: both;
+    }
+}
+
+/* Large desktop */
+@media (min-width: 1200px) {
+	.small-screen-name {
+        display: none !important;
+    }
 }

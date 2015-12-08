@@ -5,7 +5,7 @@
 	<meta charset='utf-8'>
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-	<title>Geoffrey G Miles - Contact Me</title>
+	<title>Geoffrey G Miles</title>
 	<link rel="icon" type= "images/x-icon" href="../images/user-tie.png">
 	<link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Nothing+You+Could+Do">
 	<link rel="stylesheet" type="text/css" href="../css/bootstrap.css">
@@ -17,37 +17,36 @@
 <body>
 	
 	<div class="main" class="container-fluid">
+		<!--row with header-->
 		<div class="row">	
-			<div class="col-lg-10 col-lg-offset-1 col-xs-12">
+			<div class="col-lg-10 col-lg-offset-1 col-xs-12" id="main">
 				<div class="trans">
 					<div class="row">
-						<div class="col-lg-3 col-xs-12">
+						<div class="col-lg-3">
 							<img class="picture" src="../images/me.jpg">
 						</div>
-						<div class="col-lg-9 col-xs-12">
-							<div class="row name">	
-								<div class="col-lg-12">
+						<div class="col-lg-9 col-xs-12 header">
+							<div class="row top-right">	
+								<div class="row name">
 									<div class="large-screen-name">Geoffrey G Miles</div>
 									<div class="small-screen-name">Geoff Miles</div>
 								</div>
-								<div class="col-lg-12">
-									<div class="icons-large-screen">
+								<div class="row icons-large-screen">
 										<a href="https://www.facebook.com/geoff.miles2" target="_blank"><i class="fa fa-facebook-square fa-4x"></i></a>
 										<a href="https://www.twitter.com/geoff_miles1" target="_blank"><i class="fa fa-twitter-square fa-4x"></i></a>
 										<a href="https://www.instagram.com/geoffreymiles" target="_blank"><i class="fa fa-instagram fa-4x"></i></a>
 										<a href="https://www.github.com/geoffmiles" target="_blank"><i class="fa fa-github-square fa-4x"></i></a>
 										<a href="https://www.linkedin.com/in/geoffmiles1" target="_blank"><i class="fa fa-linkedin-square fa-4x"></i></a>
-									</div>
 								</div>
 							</div>
 						</div>
 					</div>
 					<hr>
 					<div class="row">
-						<div class="col-lg-3 menu">
+						<div class="col-lg-3" id="menu">
 							<div ID='cssmenu'>
 								<ul>
-   									<li class='active'><a href='../index.html'><span>Home</span></a></li>
+   									<li class='active'><a href='index.html'><span>Home</span></a></li>
    									<li class='has-sub'><a href='#'><span>Education</span></a>
       									<ul>
          									<li><a href='bhs.html'><span>Burlington High School</span></a></li>
@@ -57,6 +56,7 @@
    									</li>
    									<li class='has-sub'><a href='#'><span>Work Experience</span></a>
       									<ul>
+      										<hr>
          									<li><a href='ewb.html'><span>Engineers Without Borders</span></a></li>
          									<li><a href='bissonette.html'><span>Bissonette Properties</span></a></li>
          									<li><a href='mhs.html'><span>Miles Heating Service</span></a></li>
@@ -78,39 +78,29 @@
 							</div>
 						</div>
 						<div class="col-lg-9 col-xs-12 bio">
-								<form class="form-horizontal" role="form" method="post" action="">
-								    <div class="form-group">
-								        <label for="name" class="col-sm-2 control-label">Name</label>
-								        <div class="col-sm-10">
-								            <input type="text" class="form-control" id="name" name="name" placeholder="First & Last Name" value="">
-								        </div>
-								    </div>
-								    <div class="form-group">
-								        <label for="company" class="col-sm-2 control-label">Company</label>
-								        <div class="col-sm-10">
-								            <input type="text" class="form-control" id="company" name="company" placeholder="Example-Company LLC" value="">
-								        </div>
-								    </div>
-								    <div class="form-group">
-								        <label for="email" class="col-sm-2 control-label">Email</label>
-								        <div class="col-sm-10">
-								            <input type="text" class="form-control" id="email" name="email" placeholder="example@domain.com" value="">
-								        </div>
-								    </div>
-								    <div class="form-group">
-								        <label for="message" class="col-sm-2 control-label">Message</label>
-								        <div class="col-sm-10">
-								            <input type="message" class="form-control" id="message" rows="4" name="message">
-								        </div>
-								    </div>
-								    <div class="form-group">
-								        <div class="col-sm-10 col-sm-offset-2">
-								            <button onclick="sendTheMail(); return false">Submit</button>
-								            <!--<pre id="response"></pre>-->
-								        </div>
-								    </div>
-								</form>
-							
+							<div class="row bio">
+					            <div class="col-md-7">
+					                <a href="#">
+					                    <img class="img-responsive" src="../images/uhart.jpg" alt="">
+					                </a>
+					            </div>
+					            <div class="col-md-5">
+					                <h2>University of Hartford</h2>
+					                <h4>2012-2017</h4>
+					                <p>Major: Computer Engineering (BS)</p>
+					                <p>Minor: Computer Science</p>
+					            </div>
+					        </div>
+					        <div class="row bio">
+					            <div class="col-md-6 portfolio-item">
+					                    <h3>Related Courses</h3>
+					                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam viverra euismod odio, gravida pellentesque urna varius vitae.</p>
+					            </div>
+					            <div class="col-md-6 portfolio-item">
+					                    <h3>Unrealted Courses</h3>
+					                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam viverra euismod odio, gravida pellentesque urna varius vitae.</p>
+					            </div>
+					        </div>
 						</div>
 					</div>
 				</div>
@@ -119,10 +109,8 @@
 	</div>
 
 	<script src="../js/jquery-1.11.1.js"></script>
-	<script src="../js/mandrill-api.js"></script>
     <script src="../js/menu.js"></script>
 	<script src="../js/bootstrap.js"></script>
-	<script src="../js/email.js"></script>
 	
 </body>
 </html>
